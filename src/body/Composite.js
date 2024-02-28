@@ -720,3 +720,15 @@ var Body = require('./Body');
      */
 
 })();
+
+// 这段代码实现了一个 `Composite` 类，它是 Matter.js 中的一个重要部分，用于管理复合体。以下是该类的主要功能：
+// 1. 创建新的复合体：通过 `Composite.create(options)` 方法创建新的复合体，可以指定一些属性来覆盖默认值。
+// 2. 添加和移除对象：通过 `Composite.add(composite, object)` 和 `Composite.remove(composite, object)` 方法向复合体中添加或移除物体、约束或其他复合体。
+// 3. 移动对象：通过 `Composite.move(compositeA, objects, compositeB)` 方法将对象从一个复合体移动到另一个复合体。
+// 4. 获取对象：通过 `Composite.get(composite, id, type)` 方法根据类型和 ID 在复合体中查找对象。
+// 5. 清空复合体：通过 `Composite.clear(composite, keepStatic, deep)` 方法清空复合体中的所有对象，可以选择保留静态对象并递归清空子对象。
+// 6. 对象操作：提供了一系列方法来对复合体中的对象进行平移、旋转、缩放等操作。
+// 7. 边界计算：通过 `Composite.bounds(composite)` 方法计算复合体中所有对象的边界。
+// 8. 事件管理：提供了 `beforeAdd`、`afterAdd`、`beforeRemove` 和 `afterRemove` 事件来管理对象的添加和移除过程。
+// 9. 属性管理：包括 `id`、`type`、`label`、`isModified` 等属性，用于标识和管理复合体。
+// 以上是该 `Composite` 类的主要功能和方法，它们可以帮助用户管理复合体及其内部对象。
